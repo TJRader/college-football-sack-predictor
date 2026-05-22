@@ -14,22 +14,29 @@ Phase 1 of 7 - Data Discovery
 - Result logged to DynamoDB
 - End-of-day reconciliation and summary tweet
 # Project Phases
-1. Exploratory Phase (In Progress): Determine Feasibility, costs, data requirements
-2. Feature Extraction
-3. Model Training and Optimization
-4. Live Ingest Feature Extractioni
-5. Lambda Function Implementation
-6. Threshold Test and Twitter Implementation
-7. End of Day Report Build
+1. Data Discovery (In Progress): Feasibility, data profiling, population sizing
+2. Feature Engineering: Feature selection, class imbalance strategy
+3. Model Development: Training, experiment tracking, model registry
+4. Live Inference Pipeline: GraphQL integration, real-time feature extraction
+5. AWS Production Architecture: Lambda, EventBridge, DynamoDB
+6. Confidence Threshold Tuning and X API Integration
+7. Monitoring and End-of-Day Reconciliation
 # Tech Stack Tools
 Python, AWS (Lambda, S3, DynamoDB, EventBridge), SageMaker, CFBD API, X API
 # Data Source
-[College Football Database](https://collegefootballdata.com/). The Tier 2 monthly subscription is needed for live play-by-play data.
+[College Football Database](https://collegefootballdata.com/). The Tier 3 monthly subscription is needed for live play-by-play data.
+# Estimated Monthly Cost
+| Service | Cost |
+|---|---|
+| CFBD Patreon Tier 3 | $10 |
+| AWS (Lambda, S3, DynamoDB, EventBridge) | ~$5-10 |
+| X API (free tier) | $0 |
+| **Total** | **~$15-20/month** |
 # Local Development Setup
 Placeholder
 # Documentation
 [Docs](https://github.com/TJRader/college-football-sack-predictor/tree/main/docs)
-# Key Decisioins
+# Key Decisions
 [Architecture decision record ](https://github.com/TJRader/college-football-sack-predictor/tree/main/docs/decisions)
 # License
 [MIT License](https://github.com/TJRader/college-football-sack-predictor/blob/main/LICENSE)
